@@ -1,6 +1,6 @@
 {
-  "name": "barato-coletivo",
-  "version": "0.0.0",
+  "name": "adote-um-pet",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

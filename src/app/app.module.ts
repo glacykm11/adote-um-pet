@@ -10,7 +10,7 @@ import { CatsComponent } from './components/cats/cats.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes:Routes = [
-  {path:'gatinhos', component: CatsComponent },
+  
   {path:'', component: AppComponent },
 ]
 

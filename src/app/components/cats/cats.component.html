@@ -1,1 +1,10 @@
-<app-card-pet [name]="name" [image]="image" [description]="description" ></app-card-pet>
+<h1>Gatos</h1>
+
+<button (click)="controlScrollLeft()"  id="slideBack" type="button">Prev</button>
+<button (click)="controlScrollRight()" id="slide" type="button">Next</button>
+<div id="container" class="main-wrapper">
+    <div *ngFor="let gato of gatos">
+      <app-card-pet *ngIf="gato.image" [name]="gato.name" [image]="gato.image.url" [description]="gato.description" ></app-card-pet>
+    </div>
+</div>
+

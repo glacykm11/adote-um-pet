@@ -3,10 +3,10 @@ import { GatinhosService } from './shared/gatinhos.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html'
+  templateUrl: './app.component.html', 
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-    title = 'barato-coletivo';
     gatos: any;
     constructor(private gatinhosService: GatinhosService){}
 
