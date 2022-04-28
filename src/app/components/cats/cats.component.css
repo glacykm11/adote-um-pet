@@ -1,10 +1,47 @@
-.main-wrapper{
+.main-wrapper {
   display: grid;
+  grid-template-columns: 50px auto 50px;
+  column-gap: 1rem;
+  grid-template-areas:
+    "titulo . ."
+    "botaoEsquerdo cards botaoDireito ";
+}
+
+.card-cats {
+  display: grid;
+  grid-area: cards;
   grid-auto-flow: column;
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
   justify-items: center;
   column-gap: 5rem;
   overflow-x: auto;
   scrollbar-width: none;
-  -ms-overflow-style: scroll;
+  -ms-overflow-style: none;
+  /* scroll-snap-type: x mandatory; */
+}
+.card-cats::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.botao-esquerdo-wrapper {
+  grid-area: botaoEsquerdo;
+  display: flex;
+  align-items: center;
+}
+
+.botao-direito-wrapper {
+  grid-area: botaoDireito;
+  display: flex;
+  align-items: center;
+}
+
+.botao-carrossel {
+  border: unset;
+  border-radius: 10px;
+  height: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+  color: black;
 }

@@ -1,37 +1,43 @@
 * {
-    font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
-.image-pet{
-    height: auto;
-    width: 100%;
-    /* transform:translate(0px, 25px) */
+.image-pet {
+  height: auto;
+  width: 100%;
+  /* transform:translate(0px, 25px) */
 }
 
-.img-box{
-    width: 180px;
-    height: 180px;
-    overflow: hidden;
-    /* border: 2px solid black; */
+.img-box {
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  /* border: 2px solid black; */
 }
 
-.nome-pet{
+.nome-pet {
   font-weight: bold;
-  
 }
 
-.descricao-pet{
+.descricao-pet {
   text-align: justify;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;
+  max-height: 129px;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
 }
 
-.card-pet{
+.card-pet {
   width: 100%;
   display: grid;
   justify-items: center;
-  
 }
 
-.botao-pet{
+.botao-pet {
   border: unset;
   border-radius: 10px;
   width: 8rem;
@@ -43,7 +49,7 @@
   color: white;
 }
 
-.botao-pet:hover{
+.botao-pet:hover {
   background-color: white;
   border: 2px solid black;
   color: black;

@@ -1,10 +1,33 @@
-<h1>Gatos</h1>
-
-<button (click)="controlScrollLeft()"  id="slideBack" type="button">Prev</button>
-<button (click)="controlScrollRight()" id="slide" type="button">Next</button>
-<div id="container" class="main-wrapper">
+<div class="main-wrapper">
+  <h1 style="grid-area: titulo">Gatos</h1>
+  <div class="botao-esquerdo-wrapper">
+    <button
+      class="botao-carrossel"
+      (click)="controlScrollLeft()"
+      id="slideBack"
+      type="button"
+    >
+      ←
+    </button>
+  </div>
+  <div id="container" class="card-cats">
     <div *ngFor="let gato of gatos">
-      <app-card-pet *ngIf="gato.image" [name]="gato.name" [image]="gato.image.url" [description]="gato.description" ></app-card-pet>
+      <app-card-pet
+        *ngIf="gato.image"
+        [name]="gato.name"
+        [image]="gato.image.url"
+        [description]="gato.description"
+      ></app-card-pet>
     </div>
+  </div>
+  <div class="botao-direito-wrapper">
+    <button
+      class="botao-carrossel"
+      (click)="controlScrollRight()"
+      id="slide"
+      type="button"
+    >
+      →
+    </button>
+  </div>
 </div>
-
