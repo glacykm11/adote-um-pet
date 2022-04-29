@@ -1,0 +1,35 @@
+.icone-home > a > img {
+  width: 35px;
+}
+
+.icone-home {
+  grid-area: iconeHome;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adocao{
+  display: flex;
+  align-items: center;
+  grid-area: iconeAdocao;
+  justify-content: center;
+}
+
+.adocao > a >  img {
+  width: 20px;
+}
+
+.titulo {
+  font-weight: bold;
+  grid-area: titulo;
+}
+
+.container {
+  border: 2px solid black;
+  display:grid;
+  grid-auto-flow: column;
+  grid-template-columns: 50px auto 30px;
+  grid-template-areas: 'iconeHome titulo iconeAdocao';
+  margin: 0 6rem 0 6rem; 
+}

@@ -8,17 +8,20 @@ import { GatinhosService } from './shared/gatinhos.service';
 import { CardPetComponent } from './components/card-pet/card-pet.component';
 import { CatsComponent } from './components/cats/cats.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 const routes:Routes = [
   
   {path:'', component: AppComponent },
+  {path:'cats', component: CatsComponent },
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     CardPetComponent,
-    CatsComponent
+    CatsComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
