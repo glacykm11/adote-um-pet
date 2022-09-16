@@ -4,10 +4,9 @@ import { GatinhosService } from './shared/services/gatinhos.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  isLoading = true;
   gatos: any;
 
   constructor(private gatinhosService: GatinhosService) {}
@@ -19,7 +18,4 @@ export class AppComponent implements OnInit {
     });
   }
 
-  load() {
-    this.isLoading = !this.isLoading;
-  }
 }

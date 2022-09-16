@@ -6,10 +6,11 @@ import axios from 'axios';
   providedIn: 'root'
 })
 export class GatinhosService {
-  breedUrl = "https://api.thecatapi.com/v1/breeds";
+  private breedUrl = "https://api.thecatapi.com/v1/breeds";
+  
   constructor(private httpClient: HttpClient) { }
 
   getCatsBreed(){
-    return this.httpClient.get(this.breedUrl)
+    return this.httpClient.get(this.breedUrl);
   }
 }

@@ -1,0 +1,16 @@
+<section>
+  <app-navbar></app-navbar>
+</section>
+
+<section class="main-home">
+  <app-cats></app-cats>
+</section>
+
+<button (click)="load()">Load</button>
+
+<div class="flex">
+  <p>Some data:</p>
+  <p
+    *skeleton="isLoading; height: '20px'; width: '100px'; className: 'pulse'"
+  ></p>
+</div>

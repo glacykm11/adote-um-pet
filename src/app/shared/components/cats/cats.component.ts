@@ -4,7 +4,7 @@ import { GatinhosService } from 'src/app/shared/services/gatinhos.service';
 @Component({
   selector: 'app-cats',
   templateUrl: './cats.component.html',
-  styleUrls: ['./cats.component.css'],
+  styleUrls: ['./cats.component.scss'],
 })
 export class CatsComponent implements OnInit {
   gatos: any;
