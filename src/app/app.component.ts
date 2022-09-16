@@ -3,20 +3,23 @@ import { GatinhosService } from './shared/services/gatinhos.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html', 
-  styleUrls: ['./app.component.css']
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-    gatos: any;
-    constructor(private gatinhosService: GatinhosService){}
+  isLoading = true;
+  gatos: any;
 
-    ngOnInit(): void {
-        console.log(this.gatinhosService.getCatsBreed())
-        this.gatinhosService.getCatsBreed()
-        .subscribe(
-            (dados) => {
-                this.gatos = dados
-            }
-        )
-    }
+  constructor(private gatinhosService: GatinhosService) {}
+
+  ngOnInit(): void {
+    console.log(this.gatinhosService.getCatsBreed());
+    this.gatinhosService.getCatsBreed().subscribe((dados) => {
+      this.gatos = dados;
+    });
+  }
+
+  load() {
+    this.isLoading = !this.isLoading;
+  }
 }

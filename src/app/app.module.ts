@@ -9,10 +9,9 @@ import { CardPetComponent } from './pages/card-pet/card-pet.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { CatsComponent } from './pages/cats/cats.component';
-
+import { SkeletonDirective } from './shared/directives/skeleton-directive/skeleton.directive';
 
 const routes:Routes = [
-  
   {path:'', component: AppComponent },
   {path:'cats', component: CatsComponent },
 ]
@@ -22,7 +21,8 @@ const routes:Routes = [
     AppComponent,
     CardPetComponent,
     CatsComponent,
-    NavbarComponent
+    NavbarComponent,
+    SkeletonDirective
   ],
   imports: [
     CommonModule,

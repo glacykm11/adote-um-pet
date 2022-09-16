@@ -1,6 +1,11 @@
 <div>
-    <app-navbar></app-navbar>
+  <app-navbar></app-navbar>
 </div>
 <div class="main-home">
-    <app-cats></app-cats>
+  <app-cats></app-cats>
+</div>
+<button (click)="load()">Load</button>
+<div class="flex">
+  <p>Some data:</p>
+  <p *skeleton="isLoading; height: '20px'; width: '100px'; className: 'pulse'"></p>
 </div>
