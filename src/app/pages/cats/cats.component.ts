@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GatinhosService } from 'src/app/shared/gatinhos.service';
+import { GatinhosService } from 'src/app/shared/services/gatinhos.service';
 
 @Component({
   selector: 'app-cats',

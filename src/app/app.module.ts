@@ -4,11 +4,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { GatinhosService } from './shared/gatinhos.service';
-import { CardPetComponent } from './components/card-pet/card-pet.component';
-import { CatsComponent } from './components/cats/cats.component';
+import { GatinhosService } from './shared/services/gatinhos.service';
+import { CardPetComponent } from './pages/card-pet/card-pet.component';
 import { RouterModule, Routes } from '@angular/router';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
+import { CatsComponent } from './pages/cats/cats.component';
+
 
 const routes:Routes = [
   
